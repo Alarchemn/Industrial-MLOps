@@ -1,0 +1,35 @@
+variables:
+  cat_ft: ['Type','Product ID']
+  drop_ft: 'RNF'
+  num_ft: ['Air temperature K','Process temperature K','Rotational speed rpm','Torque Nm','Tool wear min']
+  bin_ft: ['TWF','HDF','PWF','OSF']
+  target: 'Machine failure'
+
+model:
+  dir: models/
+  name: XGBoost
+  model_params: 
+    colsample_bytree: 0.48278853482586565
+    gamma: 3.1544797990898688
+    max_depth: 18
+    min_child_weight: 2.0
+    n_estimators: 192.0151373878645
+    reg_lambda: 0.9215303383104446
+    random_state: 42
+
+
+data:
+  raw: data/raw/train.csv
+  interim:
+    X_train: data/interim/X_train.csv
+    X_test: data/interim/X_test.csv
+    y_train: data/interim/y_train.csv
+    y_test: data/interim/y_test.csv 
+
+
+reports:
+  figures:
+    matrix: reports/figures/confusion_matrix.png
+    curves: reports/figures/ROC_DET_curves.png
+
+
