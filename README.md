@@ -68,6 +68,11 @@ This end-to-end MLops project showcases the development and implementation of a 
         └── src                 <- Soruce code
             ├── main.py 
             └── models  
+
+## UI App
+![screenshot.png](reports/figures/Screenshot.PNG)
+Communication with the API requires `gradio.Client()`
+
 ## Note
 The exploratory data analysis procedure, model evaluation and pipeline design can be found in the `notebooks` folder. Soon they will be edited to detail each procedure and contribute to the kaggle community.
 
