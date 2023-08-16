@@ -1,4 +1,4 @@
-# Industrial MLops: Fault Detection for Electromechanical Machines
+# Industrial MLops: Machine-learning fault Detection for Electromechanical Machines
 
 ## Overview
 This end-to-end MLops project showcases the development and implementation of a boosting-based machine learning algorithm tailored for fault detection in electromechanical machines. The results from out-of-sample evaluation demonstrate the system's ability to detect 78% of potentially faulty machines with 98% accuracy rate. The repository encompasses the complete source code required for prediction tasks, real-time monitoring of prediction scores, and model retraining when needed. For optimal model performance, hyperparameter tuning is skillfully executed using Bayesian optimization techniques. Moreover, the project include an integrated application that offers both a user-friendly interface and an API for seamless model deployment and utilization.
